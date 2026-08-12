@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kj Dispatch</title>
+    <link rel="shortcut icon" href="images/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/apply.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+    <ul class="navbar">
+        <li class="logo">
+            <img src="images/logo.png" alt="company logo">
+        </li>
+
+        <li class="nav-list"><a href="index.html">Home</a></li>
+        <li class="nav-list"><a href="services.html">Services</a></li>
+        <li class="nav-list"><a href="contact.html">Contact</a></li>
+
+        <li>
+            <button class="registernow">
+                <a href="getstarted.html">Get Started</a>
+            </button>
+        </li>
+    </ul>
+</nav>
+
+<section class="registration-section">
+
+    <div class="registration-container">
+
+        <h1 class="form-title">Registration Form</h1>
+
+        <form id="registrationForm"
+              action="https://formsubmit.co/toxiclaptop172@gmail.com"
+              method="POST"
+              enctype="multipart/form-data">
+
+            <!-- FormSubmit settings -->
+            <input type="hidden"
+                   name="_subject"
+                   value="New Carrier Registration - KJ Dispatch Services">
+
+            <input type="hidden"
+                   name="_template"
+                   value="table">
+
+            <input type="hidden"
+                   name="_captcha"
+                   value="true">
+
+
+            <!-- ROW 1 -->
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="full_name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="phone">
+                        Phone Number <span>*</span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- ROW 2 -->
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="email">
+                        Email Address <span>*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@example.com"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="mcNumber">
+                        MC Number <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="mcNumber"
+                        name="mc_number"
+                        placeholder="Enter your MC number"
+                        required
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- ROW 3 -->
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="equipmentType">
+                        Equipment Type <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="equipmentType"
+                        name="equipment_type"
+                        placeholder="List the type of equipment"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="equipmentQuantity">
+                        Equipment Quantity <span>*</span>
+                    </label>
+
+                    <input
+                        type="number"
+                        id="equipmentQuantity"
+                        name="equipment_quantity"
+                        placeholder="Enter quantity of equipment"
+                        min="1"
+                        required
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- FILE ROW 1 -->
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="w9">
+                        Upload W-9 Form <span>*</span>
+                    </label>
+
+                    <input
+                        type="file"
+                        id="w9"
+                        name="w9_form"
+                        accept=".pdf,.jpg,.jpeg,.png"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="insurance">
+                        Insurance Certificate <span>*</span>
+                    </label>
+
+                    <input
+                        type="file"
+                        id="insurance"
+                        name="insurance_certificate"
+                        accept=".pdf,.jpg,.jpeg,.png"
+                        required
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- FILE ROW 2 -->
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="mcAuthority">
+                        MC Authority <span>*</span>
+                    </label>
+
+                    <input
+                        type="file"
+                        id="mcAuthority"
+                        name="mc_authority"
+                        accept=".pdf,.jpg,.jpeg,.png"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="noa">
+                        Notice of Assignment <span>*</span>
+                    </label>
+
+                    <input
+                        type="file"
+                        id="noa"
+                        name="notice_of_assignment"
+                        accept=".pdf,.jpg,.jpeg,.png"
+                        required
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- ERROR MESSAGE -->
+
+            <div id="errorMessage" class="error-message"></div>
+
+
+            <!-- SUBMIT -->
+
+            <button
+                type="submit"
+                id="submitButton"
+                class="submit-button">
+                Submit
+            </button>
+
+        </form>
+
+        <!-- SUCCESS MESSAGE -->
+
+        <div id="successMessage" class="success-message">
+
+            <div class="success-icon">✓</div>
+
+            <h2>Application Submitted!</h2>
+
+            <p>
+                Thank you for applying with KJ Dispatch Services.
+                We will review your information and contact you soon.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="js/apply.js"></script>
+
+</body>
+</html>
