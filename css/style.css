@@ -1367,6 +1367,12 @@ footer {
         width: 94%;
         min-height: 75px;
         gap: 20px;
+        justify-content: space-around;
+
+    }
+
+    .logo {
+        width: 55px;
     }
 
     .logo img {
@@ -1423,10 +1429,20 @@ footer {
 
 @media (max-width: 480px) {
 
+    .nav {
+        height: 60px;
+    }
+
     .navbar {
         width: 96%;
         min-height: 65px;
         gap: 8px;
+        justify-content: space-around;
+
+    }
+
+    .logo {
+        width: 35px;
     }
 
     .logo img {
@@ -1454,9 +1470,18 @@ footer {
 
 @media (max-width: 380px) {
 
+    .nav {
+        height: 60px;
+    }
+
     .navbar {
         width: 97%;
         gap: 6px;
+        justify-content: space-around;
+    }
+
+    .logo {
+        width: 35px;
     }
 
     .logo img {
